@@ -19,7 +19,7 @@ public class Main {
             System.out.println("5. Keluar");
             System.out.print("Pilihan Anda: ");
             choice = scanner.nextInt();
-            scanner.nextLine(); // Consume newline
+            scanner.nextLine();
 
             switch (choice) {
                 case 1:
@@ -44,7 +44,7 @@ public class Main {
     }
 
     static void registerNewAccount() {
-        BankingSystem bankingSystem = new BankingSystem(); // Initialize bankingSystem
+        BankingSystem bankingSystem = new BankingSystem();
         User user = bankingSystem.registerNewAccount();
         if (user != null) {
             System.out.println("\nRegistrasi berhasil!");

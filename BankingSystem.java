@@ -20,7 +20,7 @@ public class BankingSystem {
         String nomortelepon = scanner.nextLine();
         System.out.print("Masukkan saldo awal: ");
         double saldo = scanner.nextDouble();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine();
 
         LocalDateTime now = LocalDateTime.now();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
@@ -46,7 +46,7 @@ public class BankingSystem {
         String receiverAccountNumber = scanner.nextLine();
         System.out.print("Masukkan jumlah nominal: ");
         double amount = scanner.nextDouble();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine(); 
     
         User sender = getUserByAccountNumber(senderAccountNumber);
         User receiver = getUserByAccountNumber(receiverAccountNumber);
@@ -85,7 +85,7 @@ public class BankingSystem {
         String accountNumber = scanner.nextLine();
         System.out.print("Masukkan jumlah nominal: ");
         double amount = scanner.nextDouble();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine(); 
 
         User user = getUserByAccountNumber(accountNumber);
         if (user != null) {
@@ -125,7 +125,7 @@ public class BankingSystem {
                 return user;
             }
         }
-        return null; // Not found
+        return null; 
     }
 
     private String generateAccountNumber() {
